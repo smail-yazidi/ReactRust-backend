@@ -1,1 +1,3 @@
 /target
+# Ignore environment files
+.env.local

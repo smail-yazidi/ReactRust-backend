@@ -92,7 +92,7 @@ async fn main() -> std::io::Result<()> {
 
     // Load env variables
     let mongodb_uri = env::var("MONGODB_URI")
-        .unwrap_or_else(|_| "mongodb+srv://smailyazidi:S20S09S2003S@cluster.jhvf7mf.mongodb.net/smail_yazidi?retryWrites=true&w=majority&appName=Cluster".to_string());
+        .unwrap_or_else(|_| "mongodb://127.0.0.1:27017/".to_string());
     let db_name = env::var("MONGODB_DB")
         .unwrap_or_else(|_| "smail_yazidi".to_string());
     let port = env::var("PORT")
